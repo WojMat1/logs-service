@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="liquibase.org/xml/ns/dbchangelog liquibase.org/xml/ns/dbchangelog/dbchangelog-3.8.xsd">
+
+    <changeSet id="202210151544-1" author="twojtyra">
+        <renameColumn columnDataType="timestamp"
+                      newColumnName="logged_on"
+                      oldColumnName="loggedOn"
+                      tableName="logs"/>
+    </changeSet>
+</databaseChangeLog>
